@@ -220,39 +220,49 @@ nav .nav-button:hover .button-animation {
   margin-bottom: 1em;
 }
 
-#works h2:nth-child(1) {
+#Works h2:nth-child(1) {
   font-size: 4em;
   margin-bottom: 1em;
 }
 
-#works .projet-image {
-  content: '';
-  height: 600px;
-  background-size: cover;
-  background-position: center;
-}
-
-#works .projet1 {
+#Works .projet {
   height: 100vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-#works .projet1 .projet-image {
+#Works .projet .projet-text {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#Works .projet .projet-text h3 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+#Works .projet .projet-text p {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+#Works .projet .projet-image {
+  content: '';
+  aspect-ratio: 1;
+  width: auto;
+  background-size: 120% !important;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+#Works .projet1 .projet-image {
   background-image: url("./images/equaliser.jpg");
-}
-
-#works .projet2 .projet-image {
-  background-image: url("../images/interactive.jpg");
-}
-
-#works .projet3 .projet-image {
-  background-image: url("../images/kome-waza_page.jpg");
-}
-
-#works .projet4 .projet-image {
-  background-image: url("../images/equaliser.jpg");
 }
 
 footer {

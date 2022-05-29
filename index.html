@@ -14,7 +14,7 @@
 
 </head>
 
-<body data-scroll-body class="container-fluid p-0 ">
+<body data-scroll data-scroll-body class="container-fluid p-0 ">
     <div class=" cursor"></div>
     <div class="cursor2"></div>
 
@@ -54,8 +54,8 @@
     </section>
 
 
-    <section data-scroll-section id="about" class="container-fluid">
-        <div class="row justify-content-center">
+    <section data-scroll data-scroll-section id="about" class="container-fluid">
+        <div class="row justify-content-center align-content-center h-100">
             <div class=" p-5 col-12 col-md-8  ">
 
                 <h2 class="text-center ">About Me</h2>
@@ -71,13 +71,14 @@
     </section>
 
 
-    <section data-scroll-section id="Works" class="container-fluid justify-content-around ">
+    <section data-scroll data-scroll-section  id="Works" class="container-fluid ">
         <h2 class="text-center ">My works</h2>
 
 
-        <div data-scroll  class="projet1 row projet  gx-5  p-5  justify-content-between"> 
-            <div class="projet-image col-12 col-md-5  "></div>
-            <div class="col-12 col-md-4 projet-text">
+        <div data-scroll-section data-persistent   class="row gx-5 projet1 projet">
+            <div data-scroll class="col-12 col-md-4 projet-image m-auto h-100">              
+            </div>
+            <div data-scroll data-scroll-sticky data-scroll-sticky="#fixed-elements"  class="col-12 col-md-4 projet-text p-0   ">
                 <h2>Projet </h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -86,49 +87,9 @@
                 </p>
             </div>
         </div>
-
-
-        <div  data-scroll class="projet2 row projet gx-5  p-5  justify-content-between ">
-            <div class="col-12 col-md-4 projet-text text-end">
-                <h2>Projet 2</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quod nulla
-                    exercitationem, expedita vitae nisi quisquam, quam perspiciatis veniam provident eum? Aliquid omnis
-                    porro a recusandae, unde maxime obcaecati nostrum.
-                </p>
-            </div>
-            <div class="col-12 col-md-5 projet-image "></div>
-            
-        </div>
-
-        <div  data-scroll class="projet3  row projet gx-5 p-5  justify-content-between">
-                <div class="col-12 col-md-5 projet-image "></div>
-                <div class="col-12 col-md-4 projet-text ">
-                    <h2>Projet 3</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quisquam, quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quod nulla
-                        exercitationem, expedita vitae nisi quisquam, quam perspiciatis veniam provident eum? Aliquid
-                        omnis porro a recusandae, unde maxime obcaecati nostrum.
-                    </p>
-                </div>
-            </div>
-
-            <div  data-scroll class="projet projet4 row  gx-5  p-5  justify-content-between">
-                <div class="col-12 col-md-4 projet-text text-start">
-                    <h2>Projet 1</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quisquam, quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quod nulla
-                        exercitationem, expedita vitae nisi quisquam, quam perspiciatis veniam provident eum? Aliquid
-                        omnis porro a recusandae, unde maxime obcaecati nostrum.
-                    </p>
-                </div>
-                <div class="col-12 col-md-5 projet-image "></div>
-            </div>
-
     </section>
+
+
 
     <footer data-scroll-section -section class="container-fluid footer " id="Contact">
 
