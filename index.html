@@ -14,17 +14,17 @@
 
 </head>
 
-<body data-scroll data-scroll-body class="container-fluid p-0 ">
+<body data-scroll-body class="container-fluid p-0 ">
     <div class=" cursor"></div>
     <div class="cursor2"></div>
 
     <nav class="container-fluid nav">
         <div class="container">
             <ul class="row  justify-content-center g-5">
-                <li class=" col-12  "><a id='toHomePage' class="">Home</a></li>
-                <li class=" col-12  "><a id='toAbout' class="">About</a></li>
-                <li class=" col-12  "><a id='toWorks' class=""> work</a></li>
-                <li class=" col-12  "><a id='toContact' class="">Contact Me!</a></li>
+                <li class=" col-12 fs-2"><a id='toHomePage'>Home</a></li>
+                <li class=" col-12 fs-2"><a id='toAbout'>About</a></li>
+                <li class=" col-12 fs-2"><a id='toWorks'> Work</a></li>
+                <li class=" col-12 fs-2"><a id='toContact'>Contact Me!</a></li>
             </ul>
         </div>
 
@@ -37,19 +37,18 @@
 
     </nav>
 
-    <section data-scroll-section id="homePages" class="m-auto ">
-        <div class="container-fluid">
-            <div class="row">
-                <div class=" p-5 col-12     ">
-                    <div class=" p-5  ">
-                        <h1 class=" text-center fs-1"> Jean-Brice Mau</h1>
-                        <h2 class=" text-center">I'm Creative Developper</h2>
+    <section data-scroll-section id="homePages"
+        class="m-auto container-fluid d-flex justify-content-center align-content-center">
 
-                    </div>
-                </div>
+        <div data-scroll data-scroll-sticky data-scroll-target="#homePages" class="row title " style="height: fit-content;">
+            <h1 class="col-12  text-center "> Jean-Brice Mau</h1>
+            <h2 class="col-12  text-center ">I'm Creative Developper</h2>
 
-            </div>
         </div>
+
+
+
+
 
     </section>
 
@@ -71,14 +70,14 @@
     </section>
 
 
-    <section data-scroll data-scroll-section  id="Works" class="container-fluid  ">
+    <section data-scroll data-scroll-section id="Works" class="container-fluid  ">
         <h2 class="text-center ">My works</h2>
 
 
-        <div class=" row  projet1 projet  align-self-center  gx-5 " id="projet1">
-            <div data-scroll class=" col-md-2 projet-image p-0 ">              
+        <div class=" row projet projet1   align-self-center " id="projet1">
+            <div data-scroll class="  col-auto col-md-2 projet-image ">
             </div>
-            <div data-scroll data-scroll-sticky data-scroll-target="#projet1"   class="col-md-4 projet-text  ">
+            <div data-scroll data-scroll-sticky data-scroll-target="#projet1" class="col-12 col-md-4 projet-text  ">
                 <h2>Projet </h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -87,10 +86,10 @@
                 </p>
             </div>
         </div>
-        <div class=" row  projet2 projet  align-self-center justify-content-between gx-5 " id="projet2">
-            <div data-scroll class=" col-md-2 projet-image p-0 ">              
+        <div class=" row projet projet2   align-self-center justify-content-between gx-5 " id="projet2">
+            <div data-scroll class=" col  col-md-2 projet-image  ">
             </div>
-            <div data-scroll data-scroll-sticky data-scroll-target="#projet2"   class="col-md-4 projet-text  ">
+            <div data-scroll data-scroll-sticky data-scroll-target="#projet2" class="col-12 col-md-4 projet-text  ">
                 <h2>Projet2</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -99,10 +98,10 @@
                 </p>
             </div>
         </div>
-        <div class=" row  projet3 projet  align-self-center justify-content-between gx-5 " id="projet3">
-            <div data-scroll class=" col-md-2 projet-image p-0 ">              
+        <div class=" row projet projet3   align-self-center justify-content-between gx-5 " id="projet3">
+            <div data-scroll class="     col  col-md-2 projet-image  ">
             </div>
-            <div data-scroll data-scroll-sticky data-scroll-target="#projet3"   class="col-md-4 projet-text  ">
+            <div data-scroll data-scroll-sticky data-scroll-target="#projet3" class="col-12 col-md-4 projet-text  ">
                 <h2>Projet3</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -111,10 +110,10 @@
                 </p>
             </div>
         </div>
-        <div class=" row  projet4 projet  align-self-center justify-content-between gx-5 " id="projet4">
-            <div data-scroll class=" col-md-2 projet-image p-0 ">              
+        <div class=" row projet projet4   align-self-center justify-content-between gx-5 " id="projet4">
+            <div data-scroll class="     col  col-md-2 projet-image  ">
             </div>
-            <div data-scroll data-scroll-sticky data-scroll-target="#projet4"   class="col-md-4 projet-text  ">
+            <div data-scroll data-scroll-sticky data-scroll-target="#projet4" class=" col-12 col-md-4 projet-text  ">
                 <h2>Projet4</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -127,14 +126,14 @@
 
 
 
-    <footer data-scroll-section -section class="container-fluid footer " id="Contact">
+    <footer data-scroll-section -section class="container-fluid footer justify-content-center d-flex " id="Contact">
 
-        <ul class="row px-5 justify-content-between container-lg m-auto  ">
-            <li class="col-auto" ><a href="http://"> Linedin</a> </li>
-            <li class="col-auto" ><a href="http://"> Github</a></li>
-            <li class="col-auto" ><a href="http://"> Twitter</a> </li>
-            <li class="col-auto" ><a href="http://"> Malt</a></li>
-            <li class="col-auto" ><a href="http://"> fiverr</a></li>
+        <ul class="justify-content-between align-content-center container-lg m-auto p-5">
+            <li class="col-auto text-center p-5 "><a class="m-auto"  href="http://"> Linedin</a> </li>
+            <li class="col-auto text-center p-5 "><a class="m-auto"  href="http://"> Github</a></li>
+            <li class="col-auto text-center p-5 "><a class="m-auto"  href="http://"> Twitter</a> </li>
+            <li class="col-auto text-center p-5 "><a class="m-auto"  href="http://"> Malt</a></li>
+            <li class="col-auto text-center p-5 "><a class="m-auto"  href="http://"> fiverr</a></li>
         </ul>
 
 

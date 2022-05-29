@@ -3,8 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Slab', serif;
-    border: 1px solid rgb(255, 255, 255);
-   
+    // border: 1px solid rgb(255, 255, 255);
+  
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&family=Roboto+Slab:wght@100;200;300;400;600;700;800;900&display=swap');
 
@@ -17,7 +17,6 @@
 span {
     color: #000000;
     cursor: none;
-
 
 }
 //curseur exterieur
@@ -87,4 +86,20 @@ a{
     left: 0;
     
 }
+
+@media all and (max-width: 1024px){
+  body{
+    cursor: default !important;
+  }
+  .cursor{
+    display: none !important;
+  }
+  .cursor2{
+    display: none !important;
+  }
+
+
+}
+    
+
 

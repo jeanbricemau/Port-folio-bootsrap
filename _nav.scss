@@ -2,13 +2,13 @@
 
 nav{
     height: 100vh;
+
     position: fixed;
     right: 100%;
     z-index: 2;
     background-color: rgba(71, 56, 100, 0.795);
     display: flex;
     flex-direction: column;
-    font-size: 5em;
     transition: all 0.5s ease-in-out;
 
 
@@ -35,13 +35,14 @@ nav{
                margin-right: 0.5em;
                transition: all 0.3s ease-in-out;
             }
+            
             display: flex;
             flex-direction: row;
             align-items: center;
             text-decoration: none;
-            color: $lavender-web;
+            color: $lavender-web !important;
             font-size: 3rem;
-            // color: $rich-black-fogra-29;
+            color: $rich-black-fogra-29;
             transition: all 0.5s ease-in-out;
 
             &:hover{
@@ -67,7 +68,7 @@ nav{
          margin: auto;
          width: 4rem;;
          background-color: transparent;
-         top: 50%;
+         top: 50vh;
          left: 1%;
             span{
                 &::before{

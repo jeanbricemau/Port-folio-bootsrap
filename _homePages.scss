@@ -1,18 +1,11 @@
 #homePages{
     min-height: 100vh;
     width: 100vw;
-    align-items: center;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: $alice-blue;
     font-family: 'Roboto Slab', serif;
     
     .title{
-        display: flex;
-        flex-direction: column;
+        
         &::before{
             content: "";
             width: 400px;

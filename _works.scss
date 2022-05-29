@@ -9,15 +9,9 @@
 
 
 .projet{
-   
     justify-content: space-between;
-    display: grid;
-    grid-template-columns: 1fr  2fr;
-    
- 
-    width: 100%;
-    margin: auto;
-    margin-bottom: 10%;
+    margin-bottom: 10%;  
+    height: 100vh;
     
     
 
@@ -25,14 +19,11 @@
    
     .projet-text{
       
-        margin: 0px auto ;
+       
         height: fit-content;
         display: flex;
         flex-direction: column;
 
-        // margin: 0px auto;
-
-        
         h2{
             font-size: 2em;
             margin-bottom: 1em;
@@ -46,23 +37,23 @@
     }
     .projet-image{
         content: '';
-        height: 100%;
+       
         aspect-ratio: 1;
+        height: 100%;
         width: auto;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center top;
-        transition: all .3s ease-in-out;
+        transition: all .7s ease-in-out;
 
         &:hover{
             
             background-position: center bottom;
-            transition: all .3s ease-in-out; 
+            transition: all .7s ease-in-out; 
         } 
     
     }
 }    
-
 .projet1{  
     .projet-image{
         background-image: url("./images/equaliser.jpg");
@@ -86,8 +77,10 @@
 .projet4{
     grid-template-columns: 2fr 1fr ;
     .projet-image{
-        background-image: url("../images/equaliser.jpg");
+        background-image: url("../images/maquette-zanzibar-1.png");
         order: 2;
     }
 }
+
+
 }

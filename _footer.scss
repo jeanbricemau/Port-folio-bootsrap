@@ -4,6 +4,7 @@ footer {
    z-index: 0;
 
    ul{
+       margin: auto;
        list-style: none;
    
 
@@ -12,22 +13,23 @@ footer {
    li{
        z-index: 2;
        background: transparent;
-       background-color: black;
        
+    }
     
-   }
-
-   a {
-       background: none;
+    a {
+        // background: none;
+        background-color: black;
        z-index: 30;
-      font-size: 2.4rem;
-      color:  #000000;
-      transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
-      text-decoration: none;
+       font-size: 2.4rem;
+       color:  #ffffff;
+       transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
+       text-decoration: none;
         border: 1px solid  white;
+        padding: 15px;
         &:hover{
-            // color: black;
-            text-decoration: none
+            color: black;
+            background-color: white;
+        transition: 0.3s bezier(0.175, 0.885, 0.32, 1.275);
         }
    }
 }

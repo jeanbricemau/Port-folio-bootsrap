@@ -5,7 +5,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
-  border: 1px solid white;
 }
 
 /* SCSS HEX */
@@ -25,7 +24,6 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 5em;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -58,8 +56,9 @@ nav ul li a {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  color: #e3ebff;
+  color: #e3ebff !important;
   font-size: 3rem;
+  color: #010913;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -98,7 +97,7 @@ nav .button {
   margin: auto;
   width: 4rem;
   background-color: transparent;
-  top: 50%;
+  top: 50vh;
   left: 1%;
 }
 
@@ -164,33 +163,8 @@ nav .nav-button:hover .button-animation {
 #homePages {
   min-height: 100vh;
   width: 100vw;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  align-items: center;
   color: #e7f0ff;
   font-family: 'Roboto Slab', serif;
-}
-
-#homePages .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 #homePages .title::before {
@@ -235,17 +209,11 @@ nav .nav-button:hover .button-animation {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr  2fr;
-      grid-template-columns: 1fr  2fr;
-  width: 100%;
-  margin: auto;
   margin-bottom: 10%;
+  height: 100vh;
 }
 
 #Works .projet .projet-text {
-  margin: 0px auto;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -273,20 +241,20 @@ nav .nav-button:hover .button-animation {
 
 #Works .projet .projet-image {
   content: '';
-  height: 100%;
   aspect-ratio: 1;
+  height: 100%;
   width: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
 }
 
 #Works .projet .projet-image:hover {
   background-position: center bottom;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
 }
 
 #Works .projet1 .projet-image {
@@ -315,7 +283,7 @@ nav .nav-button:hover .button-animation {
 }
 
 #Works .projet4 .projet-image {
-  background-image: url("../images/equaliser.jpg");
+  background-image: url("../images/maquette-zanzibar-1.png");
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
@@ -328,28 +296,32 @@ footer {
 }
 
 footer ul {
+  margin: auto;
   list-style: none;
 }
 
 footer li {
   z-index: 2;
   background: transparent;
-  background-color: black;
 }
 
 footer a {
-  background: none;
+  background-color: black;
   z-index: 30;
   font-size: 2.4rem;
-  color: #000000;
+  color: #ffffff;
   -webkit-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
   text-decoration: none;
   border: 1px solid  white;
+  padding: 15px;
 }
 
 footer a:hover {
-  text-decoration: none;
+  color: black;
+  background-color: white;
+  -webkit-transition: 0.3s bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.3s bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 span {
@@ -421,5 +393,17 @@ a {
   overflow: hidden;
   top: 0;
   left: 0;
+}
+
+@media all and (max-width: 1024px) {
+  body {
+    cursor: default !important;
+  }
+  .cursor {
+    display: none !important;
+  }
+  .cursor2 {
+    display: none !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
