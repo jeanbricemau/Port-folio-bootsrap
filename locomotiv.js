@@ -4,8 +4,8 @@ const scroll = new LocomotiveScroll(
     {
         el: document.querySelector('[data-scroll-body]'),
         smooth: true,
-        multiplier : 1.2,
-        lerp:0.03,        
+        multiplier : 1.6,
+        lerp:0.03,       
 
     }
 
@@ -13,26 +13,6 @@ const scroll = new LocomotiveScroll(
 
 
 
-// function backgroundDynamique{
-//     const scrollFixed = new LocomotiveScroll(
-//         {
-//             el: document.querySelector('[data-scroll-body]'),
-//             smooth: false,
-//             multiplier : 0.1,
-//             lerp:0,        
-    
-//         }
-//     );
-// }
-
-// const scrollWorks = new LocomotiveScroll(
-//     {
-//         el: document.querySelector('#Works'),
-//         smooth: true,
-//         // getSpeed: true,
-//         multiplier  : 1, 
-//     }
-// ); 
 
 
 let toHomePage = document.querySelector('#toHomePage');

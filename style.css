@@ -220,16 +220,32 @@ nav .nav-button:hover .button-animation {
   margin-bottom: 1em;
 }
 
+#Works {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 #Works h2:nth-child(1) {
   font-size: 4em;
   margin-bottom: 1em;
 }
 
 #Works .projet {
-  height: 100vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr  2fr;
+      grid-template-columns: 1fr  2fr;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 10%;
 }
 
 #Works .projet .projet-text {
+  margin: 0px auto;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -242,27 +258,67 @@ nav .nav-button:hover .button-animation {
           flex-direction: column;
 }
 
-#Works .projet .projet-text h3 {
+#Works .projet .projet-text h2 {
   font-size: 2em;
   margin-bottom: 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 #Works .projet .projet-text p {
-  font-size: 1.5em;
-  margin-bottom: 1em;
+  font-size: 1.2em;
+  width: 80%;
 }
 
 #Works .projet .projet-image {
   content: '';
+  height: 100%;
   aspect-ratio: 1;
   width: auto;
-  background-size: 120% !important;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center top;
-  background-attachment: fixed;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#Works .projet .projet-image:hover {
+  background-position: center bottom;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 #Works .projet1 .projet-image {
   background-image: url("./images/equaliser.jpg");
+}
+
+#Works .projet2 {
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+}
+
+#Works .projet2 .projet-image {
+  background-image: url("../images/interactive.jpg");
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+#Works .projet3 .projet-image {
+  background-image: url("../images/kome-waza_page.jpg");
+}
+
+#Works .projet4 {
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+}
+
+#Works .projet4 .projet-image {
+  background-image: url("../images/equaliser.jpg");
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 footer {
