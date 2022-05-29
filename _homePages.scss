@@ -1,0 +1,32 @@
+#homePages{
+    min-height: 100vh;
+    width: 100vw;
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $alice-blue;
+    font-family: 'Roboto Slab', serif;
+    
+    .title{
+        display: flex;
+        flex-direction: column;
+        &::before{
+            content: "";
+            width: 400px;
+            height: 100%;
+            background-color: $alice-blue;
+        }
+        
+        h1{
+            // font-size: 4em;
+            font-weight: 600;
+            // text-align: center;
+            
+        }
+    }
+    
+   
+}

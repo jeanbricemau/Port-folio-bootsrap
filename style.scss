@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    border: 1px solid rgb(255, 255, 255);
+   
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&family=Roboto+Slab:wght@100;200;300;400;600;700;800;900&display=swap');
+
+@import "varibles";
+@import "nav";
+@import "homePages";
+@import "about";
+@import "works";
+@import "footer";
+span {
+    color: #000000;
+    cursor: none;
+
+
+}
+//curseur exterieur
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 1;
+  }
+  //cursuer interieur
+  .cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.393);
+    opacity: 1;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity 10s;
+    z-index: 1000;
+  }
+  
+  .hover {
+    // background-color: rgb(255, 255, 255);
+    transition: width .3s, height .3s, opacity 10s;
+
+  }
+
+  .hover2 {
+    transition: width .3s, height .3s, opacity 10s;
+    // display: none;
+    
+  }
+
+
+  .cursorinnerhover {
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+  }
+
+body{
+    // overflow-x: hidden;
+    height: fit-content;
+    background: #666666;
+    width: 100%;
+    cursor: none;
+    
+    
+}
+a{
+    cursor: none;
+
+}
+
+.fixed{
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    
+}
+

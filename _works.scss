@@ -1,0 +1,38 @@
+#works{
+
+    h2:nth-child(1){
+        font-size: 4em;
+        margin-bottom: 1em;
+    }
+.projet-image{
+    content: '';
+    height:600px;
+    background-size: cover;
+    background-position: center;
+}
+
+.projet1{
+    height: 100vh;
+    justify-content: center;
+    
+    .projet-image{
+        background-image: url("./images/equaliser.jpg");
+       
+    }
+}
+.projet2{
+    .projet-image{
+        background-image: url("../images/interactive.jpg");
+    }
+}
+.projet3{
+    .projet-image{
+        background-image: url("../images/kome-waza_page.jpg");
+    }
+}
+.projet4{
+    .projet-image{
+        background-image: url("../images/equaliser.jpg");
+    }
+}
+}
