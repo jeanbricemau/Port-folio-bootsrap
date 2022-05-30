@@ -166,7 +166,7 @@ nav .nav-button:hover .button-animation {
 #homePages {
   height: 100vh;
   width: 100vw;
-  color: #e7f0ff;
+  color: #010913ff;
   font-family: 'Roboto Slab', serif;
 }
 
@@ -289,6 +289,10 @@ nav .nav-button:hover .button-animation {
   z-index: 2;
 }
 
+#Works .wrapper a span:hover {
+  color: #ece8efff !important;
+}
+
 #Works .wrapper a:after {
   position: absolute;
   content: "";
@@ -296,13 +300,13 @@ nav .nav-button:hover .button-animation {
   left: 0;
   width: 0;
   height: 100%;
-  background: #e3ebff;
+  background: #010913ff;
   -webkit-transition: all .35s;
   transition: all .35s;
 }
 
 #Works .wrapper a:hover {
-  color: #fff;
+  color: #ece8efff;
 }
 
 #Works .wrapper a:hover:after {
@@ -403,7 +407,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background: #666666;
+  background: #ece8efff;
   width: 100%;
   cursor: none;
 }
