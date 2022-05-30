@@ -1,8 +1,10 @@
-let navBoutton = document.querySelector('.nav-button');
-let nav = document.querySelector('nav');
 let body = document.querySelector('body');
-
+let navBoutton = document.querySelector('.nav-button');
+let buttonSpan = document.querySelector('.nav-button span');
+let nav = document.querySelector('nav');
 let navUl = document.querySelector('nav ul');
+let footer = document.querySelector('footer');
+
 
 
 navUl.addEventListener('mouseleave', () => {
@@ -16,6 +18,16 @@ navUl.addEventListener('mouseleave', () => {
 
 navBoutton.addEventListener('click', function () {
     nav.classList.toggle('translate-nav');
-    
     console.log('click');
 })
+
+
+footer.addEventListener('mouseenter', () => {
+buttonSpan.classList.add('btnNavChangeColor');
+
+      });
+
+      footer.addEventListener('mouseleave', () => {
+        buttonSpan.classList.remove('btnNavChangeColor');
+        
+              });

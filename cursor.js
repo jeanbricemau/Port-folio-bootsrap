@@ -1,7 +1,6 @@
 var cursor = document.querySelector('.cursor');
 var cursorinner = document.querySelector('.cursor2');
-var a = document.querySelectorAll('li');
-var footer = document.querySelector('.footer');
+
 
 document.addEventListener('mousemove', function(e){
   var x = e.clientX;
@@ -26,14 +25,3 @@ document.addEventListener('mouseup', function(){
   cursorinner.classList.remove('cursorinnerhover')
 });
 
-
-a.forEach(item => {
-  item.addEventListener('mouseover', () => {
-    cursor.classList.add('hover');
-    // cursorinner.classList.add('hover2');
-  });
-  item.addEventListener('mouseleave', () => {
-    cursor.classList.remove('hover');
-    // cursorinner.classList.remove('hover2');
-  });
-})

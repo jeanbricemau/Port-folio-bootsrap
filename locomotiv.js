@@ -11,10 +11,6 @@ const scroll = new LocomotiveScroll(
 
 );
 
-
-
-
-
 let toHomePage = document.querySelector('#toHomePage');
 let toAbout = document.querySelector('#toAbout');
 let toWorks = document.querySelector('#toWorks');
