@@ -5,7 +5,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
-  border: 1px solid white;
 }
 
 /* SCSS HEX */
@@ -229,9 +228,9 @@ nav .nav-button:hover .button-animation {
 #Works .projet .projet-image {
   content: '';
   aspect-ratio: 2/3;
-  height: 100%;
-  width: auto;
-  background: cover no-repeat center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
   -webkit-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
 }
@@ -266,6 +265,48 @@ nav .nav-button:hover .button-animation {
 
 #Works .projet4 .projet-image {
   background-image: url("../images/maquette-zanzibar-1.png");
+}
+
+#Works .wrapper a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+#Works .wrapper a span {
+  position: relative;
+  z-index: 2;
+}
+
+#Works .wrapper a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #e3ebff;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+#Works .wrapper a:hover {
+  color: #fff;
+}
+
+#Works .wrapper a:hover:after {
+  width: 100%;
 }
 
 footer {

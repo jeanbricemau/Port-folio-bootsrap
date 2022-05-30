@@ -24,8 +24,7 @@ navBoutton.addEventListener('click', function () {
 
 footer.addEventListener('mouseenter', () => {
 buttonSpan.classList.add('btnNavChangeColor');
-
-      });
+ });
 
       footer.addEventListener('mouseleave', () => {
         buttonSpan.classList.remove('btnNavChangeColor');
