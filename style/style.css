@@ -264,7 +264,7 @@ nav .nav-button:hover .button-animation {
 }
 
 #Works .projet4 .projet-image {
-  background-image: url("../images/maquette-zanzibar-1.png");
+  background-image: url("../images/Gallery.jpg");
 }
 
 #Works .wrapper a {
@@ -311,6 +311,9 @@ nav .nav-button:hover .button-animation {
 
 footer {
   height: 100vh;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   background-color: black;
   z-index: 0;
 }
@@ -409,8 +412,8 @@ a {
   cursor: none;
 }
 
-.fixed {
-  overflow: hidden;
+.lock {
+  overflow: hidden !important;
   top: 0;
   left: 0;
 }

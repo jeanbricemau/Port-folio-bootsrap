@@ -18,7 +18,7 @@ navUl.addEventListener('mouseleave', () => {
 
 navBoutton.addEventListener('click', function () {
     nav.classList.toggle('translate-nav');
-    console.log('click');
+    body.classList.add('lock');
 })
 
 
