@@ -2,11 +2,10 @@
 
 nav{
     height: 100vh;
-
     position: fixed;
     right: 100%;
     z-index: 2;
-    background-color: rgba(71, 56, 100, 0.795);
+    background-color: $MIDm ;
     display: flex;
     flex-direction: column;
     transition: all 0.5s ease-in-out;
@@ -126,5 +125,5 @@ nav{
 
  .btnNavChangeColor{
 
-     background-color: $lavender-web !important;
+     background-color: $WHITEm !important;
  }

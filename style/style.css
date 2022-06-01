@@ -13,7 +13,7 @@ nav {
   position: fixed;
   right: 100%;
   z-index: 2;
-  background-color: rgba(71, 56, 100, 0.795);
+  background-color: #7d7d7d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
