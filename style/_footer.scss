@@ -1,12 +1,22 @@
 footer {
    height: fit-content;
+   align-items: center;
+   justify-content: center;
 //    min-height: 100vh;
    background-color: hsl(0, 0%, 0%);
    z-index: 0;
 
    ul{
+       display: flex;
+       flex-direction: column;
+       height: fit-content;
        margin: auto;
        list-style: none;
+       height: fit-content;
+       align-items: center;
+
+       justify-content: space-between;
+
    
 
    }
