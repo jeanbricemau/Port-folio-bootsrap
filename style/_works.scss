@@ -1,5 +1,7 @@
 #Works{
-    min-height: fit-content;
+    min-height: 100vh;
+    height: fit-content;
+
 
     h2:nth-child(1){
         font-size: 4em;
@@ -11,7 +13,7 @@
 .projet{
     
     margin-bottom: 10%;  
-    min-height: 100vh;
+    // min-height: 100vh;
     height: fit-content;
     
     

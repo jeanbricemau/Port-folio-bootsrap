@@ -1,6 +1,8 @@
 #about{
     font-family: 'Roboto Slab' !important;
     height: 100vh;
+    display: flex;
+    height: fit-content;
     h2{
         font-size: 4em;
         margin-bottom: 1em;

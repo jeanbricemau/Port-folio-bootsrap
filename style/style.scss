@@ -69,11 +69,13 @@ span {
   }
 
 body{
-    // overflow-x: hidden;
+    overflow-x: hidden;
     height: fit-content;
     background: $WHITE;
-    width: 100%;
+    width: 100vw;
+
     cursor: none;
+    display: flex;
     
     
 }
