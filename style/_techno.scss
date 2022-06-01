@@ -1,0 +1,20 @@
+#techno{
+    height: fit-content;
+    display: flex;
+    margin: 50px 0px;
+
+    ul{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:  20px;
+        list-style: none;
+
+        li{
+            margin: auto;
+        }
+
+    }
+}

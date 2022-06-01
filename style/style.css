@@ -8,9 +8,6 @@
 }
 
 /* SCSS HEX */
-/* SCSS HSL */
-/* SCSS RGB */
-/* SCSS Gradient */
 nav {
   height: 100vh;
   position: fixed;
@@ -55,9 +52,8 @@ nav ul li a {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  color: #e3ebff !important;
+  color: #e3ebffff !important;
   font-size: 3rem;
-  color: #010913;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -66,14 +62,14 @@ nav ul li a:before {
   content: " ";
   height: 2px;
   width: 0em;
-  background-color: #e3ebff;
+  background-color: #e3ebffff;
   margin-right: 0.5em;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-  color: #e3ebff;
+  color: #e3ebffff;
 }
 
 nav ul li a:hover:before {
@@ -160,7 +156,7 @@ nav .nav-button:hover .button-animation {
 }
 
 .btnNavChangeColor {
-  background-color: #e3ebff !important;
+  background-color: #e3ebffff !important;
 }
 
 #homePages {
@@ -174,7 +170,7 @@ nav .nav-button:hover .button-animation {
   content: "";
   width: 400px;
   height: 100%;
-  background-color: #e7f0ff;
+  background-color: #e7f0ffff;
 }
 
 #homePages .title h1 {
@@ -311,6 +307,37 @@ nav .nav-button:hover .button-animation {
 
 #Works .wrapper a:hover:after {
   width: 100%;
+}
+
+#techno {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0px;
+}
+
+#techno ul {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+
+#techno ul li {
+  margin: auto;
 }
 
 footer {
