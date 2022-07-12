@@ -341,7 +341,8 @@ nav .nav-button:hover .button-animation {
 }
 
 footer {
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
